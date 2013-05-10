@@ -1,0 +1,6 @@
+{
+	"require": {
+		"niahoo/altorouter": "dev-named-only",
+		"pimple/pimple": "1.0.*@dev"
+  }
+}
