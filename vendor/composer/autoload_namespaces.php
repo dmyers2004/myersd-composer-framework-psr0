@@ -6,5 +6,10 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Respect\\Validation' => $vendorDir . '/respect/validation/library',
+    'Psr\\Log\\' => $vendorDir . '/psr/log',
     'Pimple' => $vendorDir . '/pimple/pimple/lib',
+    'Monolog' => $vendorDir . '/monolog/monolog/src',
+    'CacheCache' => $vendorDir . '/maximebf/cachecache/src',
+    '' => $vendorDir . '/vates/eventus/src',
 );

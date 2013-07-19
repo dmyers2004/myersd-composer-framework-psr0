@@ -3,8 +3,111 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "cbac043ba70f7145289bcba16c682ec2",
+    "hash": "f4bbd2bdd45cb3e8284a1eea156c809c",
     "packages": [
+        {
+            "name": "maximebf/cachecache",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maximebf/CacheCache.git",
+                "reference": "1.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maximebf/CacheCache/zipball/1.0.0",
+                "reference": "1.0.0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "CacheCache": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maxime Bouroumeau-Fuseau",
+                    "email": "maxime.bouroumeau@gmail.com",
+                    "homepage": "http://maximebf.com"
+                }
+            ],
+            "description": "Caching library for PHP5.3",
+            "homepage": "https://github.com/maximebf/CacheCache",
+            "keywords": [
+                "cache"
+            ],
+            "time": "2012-08-18 09:01:44"
+        },
+        {
+            "name": "monolog/monolog",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "1eed379a3b7c31f698e49fa7a822a536e94c31f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/1eed379a3b7c31f698e49fa7a822a536e94c31f5",
+                "reference": "1eed379a3b7c31f698e49fa7a822a536e94c31f5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/log": ">=1.0,<2.0"
+            },
+            "require-dev": {
+                "doctrine/couchdb": "dev-master",
+                "mlehner/gelf-php": "1.0.*",
+                "raven/raven": "0.3.*"
+            },
+            "suggest": {
+                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-mongo": "Allow sending log messages to a MongoDB server",
+                "mlehner/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "raven/raven": "Allow sending log messages to a Sentry server"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.5.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Monolog": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+            "homepage": "http://github.com/Seldaek/monolog",
+            "keywords": [
+                "log",
+                "logging",
+                "psr-3"
+            ],
+            "time": "2013-05-03 09:05:12"
+        },
         {
             "name": "niahoo/altorouter",
             "version": "dev-named-only",
@@ -95,6 +198,194 @@
                 "dependency injection"
             ],
             "time": "2013-03-08 08:21:40"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log",
+                "reference": "1.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/php-fig/log/archive/1.0.0.zip",
+                "reference": "1.0.0",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Psr\\Log\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2012-12-21 11:40:51"
+        },
+        {
+            "name": "respect/validation",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Respect/Validation.git",
+                "reference": "21ef9dae33f9c8bca1ad2bd4d703c356ae39a719"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Respect/Validation/zipball/21ef9dae33f9c8bca1ad2bd4d703c356ae39a719",
+                "reference": "21ef9dae33f9c8bca1ad2bd4d703c356ae39a719",
+                "shasum": ""
+            },
+            "require-dev": {
+                "symfony/validator": "2.*",
+                "zendframework/zend-validator": "2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Respect\\Validation": "library/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD Style"
+            ],
+            "authors": [
+                {
+                    "name": "Henrique Moody",
+                    "email": "henriquemoody@gmail.com",
+                    "homepage": "http://henriquemoody.com/"
+                },
+                {
+                    "name": "Alexandre Gaigalas",
+                    "email": "alexandre@gaigalas.net"
+                },
+                {
+                    "name": "Carlos André Ferrari",
+                    "email": "caferrari@gmail.com"
+                },
+                {
+                    "name": "Devin Torres",
+                    "email": "devin@devintorres.com"
+                },
+                {
+                    "name": "Emerson Carvalho",
+                    "email": "emerson.broga@gmail.com"
+                },
+                {
+                    "name": "Fábio da Silva Ribeiro",
+                    "email": "fabiorphp@gmail.com"
+                },
+                {
+                    "name": "Jair Henrique",
+                    "email": "jair.henrique@gmail.com"
+                },
+                {
+                    "name": "Jayson Reis",
+                    "email": "santosdosreis@gmail.com"
+                },
+                {
+                    "name": "Jean Pimentel",
+                    "email": "jeanfap@gmail.com"
+                },
+                {
+                    "name": "Kleber Hamada Sato",
+                    "email": "kleberhs007@yahoo.com"
+                },
+                {
+                    "name": "Leandro",
+                    "email": "lleitep3@gmail.com"
+                },
+                {
+                    "name": "Marcelo Araujo",
+                    "email": "msaraujo@php.net"
+                },
+                {
+                    "name": "Michael Klishin",
+                    "email": "michaelklishin@me.com"
+                },
+                {
+                    "name": "Morf",
+                    "email": "i@morfi.ru"
+                },
+                {
+                    "name": "Rogerio Prado de Jesus",
+                    "email": "rogeriopradoj@gmail.com"
+                },
+                {
+                    "name": "Torben Brodt",
+                    "email": "t.brodt@gmail.com"
+                },
+                {
+                    "name": "Kinn Coelho Julião",
+                    "email": "kinncj@gmail.com",
+                    "homepage": "http://kinncj.com.br",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Augusto Pascutti",
+                    "email": "augusto@phpsp.org.br"
+                }
+            ],
+            "description": "The most awesome validation engine ever created for PHP",
+            "time": "2013-04-30 17:13:14"
+        },
+        {
+            "name": "vates/eventus",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vatesfr/eventus.git",
+                "reference": "731dbad5faa6844eed77f51dab23ae340170fefa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vatesfr/eventus/zipball/731dbad5faa6844eed77f51dab23ae340170fefa",
+                "reference": "731dbad5faa6844eed77f51dab23ae340170fefa",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=3.7,<3.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Julien Fontanet",
+                    "email": "julien.fontanet@vates.fr"
+                }
+            ],
+            "description": "Small event library.",
+            "keywords": [
+                "event"
+            ],
+            "time": "2013-04-16 11:59:24"
         }
     ],
     "packages-dev": [
@@ -106,7 +397,11 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "niahoo/altorouter": 20,
-        "pimple/pimple": 20
+        "pimple/pimple": 20,
+        "monolog/monolog": 20,
+        "vates/eventus": 20,
+        "maximebf/cachecache": 20,
+        "respect/validation": 20
     },
     "platform": [
 

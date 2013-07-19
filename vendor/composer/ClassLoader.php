@@ -218,7 +218,6 @@ class ClassLoader
         foreach ($this->prefixes as $prefix => $dirs) {
             if (0 === strpos($class, $prefix)) {
                 foreach ($dirs as $dir) {
-//echo $dir . DIRECTORY_SEPARATOR . $classPath.'<br>';                	
                     if (file_exists($dir . DIRECTORY_SEPARATOR . $classPath)) {
                         return $dir . DIRECTORY_SEPARATOR . $classPath;
                     }

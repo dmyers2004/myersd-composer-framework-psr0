@@ -1,6 +1,10 @@
 {
 	"require": {
 		"niahoo/altorouter": "dev-named-only",
-		"pimple/pimple": "1.0.*@dev"
+		"pimple/pimple": "1.0.*@dev",
+		"monolog/monolog": "1.5.*@dev",
+		"vates/eventus": "dev-master",
+		"maximebf/cachecache": "dev-master",
+		"respect/validation": "dev-develop"
   }
 }

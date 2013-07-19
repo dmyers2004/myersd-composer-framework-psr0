@@ -22,5 +22,16 @@ class home {
 		echo '404 Not Found';
 	}
 	
+	public function dump() {
+		echo '<pre>';
+		print_r($this->container);	
+	}
+
+	public function group() {
+		echo '<pre>';
+		print_r($this->container);	
+	}
+
+	
 }
 
